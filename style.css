@@ -135,3 +135,17 @@ body {
   margin: 15px 0 28px 0;
 }
 
+.footer {
+  height:161px;
+  background: #19849b;
+}
+
+.footer__avatar {
+  width: 94px;
+  height: 94px;
+}
+
+.footer__copyright {
+  height: 44px;
+  background: #16758A;
+}
