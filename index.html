@@ -11,6 +11,9 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     
 
     <link rel="stylesheet" href="style.css" />
@@ -22,20 +25,23 @@
 
     <div class="container">
       <section class="hero">
-        <div class="row justify-content-between">
-          <div class="col-12 col-sm-5  banner">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="images/slider-foto.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/slider-foto.jpg" class="d-block w-100" alt="...">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 justify-content-between">
+          <div class="col-12 col-sm-4">
+            <div class="banner">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/slider-foto.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slider-foto.jpg" class="d-block w-100" alt="...">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-7  hero__content">
+          <div class="col-12 col-sm-8">
+            <div class="hero__content">
             <h1 class="hero__title">Hey. I'm Lucas </br>
               And I'm a professional photographer</h1>
             <div class="hero__underline"></div>
@@ -47,6 +53,7 @@
             <button type="button" class="btn hero__btn" data-bs-toggle="modal" data-bs-target="#contactModal">
               contact me
             </button>
+            </div>
             
             <!-- Modal -->
             <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -85,11 +92,12 @@
       </section>
 
       <section class="portfolio">
-        <div class="row">
+        <div class="row row-cols-1 row-cols-sm-2">
           <h2 class="portfolio__title">Portfolio</h2>
           <p class="portfolio__text col-12 col-sm-9">
             Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
           </p>
+        </div>
 
           <div class="row row-cols-2 row-cols-sm-4 g-2">
             <div class="col-6 portfolio__items">
@@ -129,7 +137,7 @@
             </div>
           </div>
 
-        </div>
+        
       </section>
     </div>
 
