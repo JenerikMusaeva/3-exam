@@ -11,8 +11,7 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -20,19 +19,26 @@
     <header class="header">
       <div class="row align-items-center justify-content-center header__content">
         <a href="#" class="header__logo">Lucas Montana</a>
+        
       </div>
     </header>
 
     <div class="container">
       <section class="hero">
         <div class="row justify-content-between">
-          <div class="col-5 banner">
-            <div class="banner-slider">
-              <img src="images/slider-foto.jpg" alt="fotograph Lucas Montana">
-              <img src="images/slider-foto.jpg" alt="fotograph Lucas Montana">
+          <div class="col-12 col-sm-5  banner">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/slider-foto.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slider-foto.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-7  hero__content">
+          <div class="col-12 col-sm-7  hero__content">
             <h1 class="hero__title">Hey. I'm Lucas </br>
               And I'm a professional photographer</h1>
             <div class="hero__underline"></div>
@@ -41,12 +47,12 @@
               Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligulas semper. Cum sociis natoque penatibus et magnis maecenas. Donec ullamcorper nulla non metus auctor fringilla. 
             </p>
 
-            <button type="button" class="btn hero__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn hero__btn" data-bs-toggle="modal" data-bs-target="#contactModal">
               contact me
             </button>
             
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -56,9 +62,20 @@
                     <p class="modal-text">
                       Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
                     </p>
-                    <input type="text">
-                    <input type="text">
-                    <textarea name="" id="" cols="50" rows="10"></textarea>
+                    <form class="modal-form">
+                      <div class="row">
+                        <div class="col-12 col-sm-4">
+                          <input type="text" class="form-control" placeholder="Your name...">
+                        </div>
+                        <div class="col-12 col-sm-8">
+                          <input type="text" class="form-control" placeholder="Your email...">
+                        </div>
+                        <div class="col-12 mb-20">
+                          <textarea rows="10" class="form-control modal-input-text" placeholder="Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Fu blandit tempus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vollis  commodo luctus. Curabitur blandit. Morbi leo risus, porta ac consectetur ac, at eros.z"></textarea>
+                        </div>
+                      </div>
+                      
+                    </form>
                     <button type="button" class="btn modal__btn">send message</button>
 
                   </div>
@@ -73,22 +90,38 @@
       <section class="portfolio">
         <div class="row">
           <h2 class="portfolio__title">Portfolio</h2>
-          <p class="portfolio__text col-9">
+          <p class="portfolio__text col-12 col-sm-9">
             Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
           </p>
 
-          <div class="row">
-            <div class="col-3"><img src="images/foto-1.jpg" alt=""></div>
-            <div class="col-3"><img src="images/foto-2.jpg" alt=""></div>
-            <div class="col-3"><img src="images/foto-3.jpg" alt=""></div>
-            <div class="col-3"><img src="images/foto-4.jpg" alt=""></div>
+          <div class="row row-cols-2 row-cols-sm-4 g-2">
+            <div class="col-6">
+              <img class="portfolio__image" src="images/load-min.jpg" data-src="images/foto-1.jpg" alt="foto by Lucas Montana">
+            </div>
+            <div class="col-6">
+              <img class="portfolio__image" src="images/load-min.jpg" data-src="images/foto-2.jpg" alt="foto by Lucas Montana">
+            </div>
+            <div class="col-6">
+              <img class="portfolio__image" src="images/load-min.jpg" data-src="images/foto-3.jpg" alt="foto by Lucas Montana">
+            </div>
+            <div class="col-6">
+              <img class="portfolio__image" src="images/load-min.jpg" data-src="images/foto-4.jpg" alt="foto by Lucas Montana">
+            </div>
           </div>
 
-          <div class="row">
-            <div class="col-3"><img src="images/foto-5.jpg" alt=""></div>
-            <div class="col-3"><img src="images/foto-6.jpg" alt=""></div>
-            <div class="col-3"><img src="images/foto-7.jpg" alt=""></div>
-            <div class="col-3"><img src="images/foto-8.jpg" alt=""></div>
+          <div class="row row-cols-2 row-cols-sm-4 g-2">
+            <div class="col-6">
+              <img class="portfolio__image" src="images/load-min.jpg" data-src="images/foto-5.jpg" alt="foto by Lucas Montana">
+            </div>
+            <div class="col-6">
+              <img class="portfolio__image" src="images/load-min.jpg" data-src="images/foto-6.jpg" alt="foto by Lucas Montana">
+            </div>
+            <div class="col-6">
+              <img class="portfolio__image" src="images/load-min.jpg" data-src="images/foto-7.jpg" alt="foto by Lucas Montana">
+            </div>
+            <div class="col-6">
+              <img class="portfolio__image" src="images/load-min.jpg" data-src="images/foto-8.jpg" alt="foto by Lucas Montana">
+            </div>
           </div>
 
         </div>
@@ -96,13 +129,19 @@
     </div>
 
     <footer class="footer">
-      <div class="footer__content row align-items-center justify-content-center header__content">
+      <div class="footer__content row align-items-center justify-content-center">
+        
         <img class="footer__avatar" src="images/footer-avatar.png" alt="fotograph Lucas Montana">
-        <h2 class="footer__title"></h2>
-        <a href="tel:+47682525255"> +4 768 25 25 255 </a>
-        <address>
-          Poland, Warsaw
-        </address>
+        
+        
+        <div class="footer__content_info">
+          <h2 class="footer__title">Lucas Montana</h2>
+          <a class="footer__tel" href="tel:+47682525255"> +4 768 25 25 255 </a>
+          <address class="footer__address">
+            Poland, Warsaw
+          </address>
+        
+        </div>
       </div>
       <div class="footer__copyright">
 
@@ -119,9 +158,6 @@
       integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>  
 
     <script src="script.js"></script>
   </body>

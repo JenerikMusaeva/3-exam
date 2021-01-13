@@ -15,9 +15,12 @@ body {
   letter-spacing: 0.01em;
 }
 
+/* style for header */
+
 .header__content {
   height: 58px;
   background: #19849b;
+  padding: 0;
 }
 
 .header__logo {
@@ -28,6 +31,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  padding: 0;
+  
 }
 
 .header__logo:hover {
@@ -43,7 +48,8 @@ body {
 }
 
 .banner {
-  width: 411px;
+  /* width: 411px; */
+  height: 355px;
 }
 
 .slick-prev .slick-arrow {
@@ -103,29 +109,59 @@ body {
   border: 2px solid #19849B;
 }
 
+/* style for modal window */
+
 .modal__btn:hover {
   color: var(--main-text-color);
   background-color: #19849B;
   border: 2px solid #19849B;
 }
 
-/* style for modal window */
-
-.modal-content {
+#contactModal .modal-content {
   background-color: #363636;
   color: var(--main-text-color);
+  padding: 49px 44px;
+  width: 656px;
 }
 
-.modal-header {
+#contactModal .modal-header {
   border-bottom: none
 }
 
-.btn-close {
+.modal-form {
+  margin: 26px 0 26px 0;
+}
+
+.form-control {
+  border-radius: 0;
+  padding: 16px;
+  background-color: #324B53;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.modal-input-text::placeholder{
   color: var(--main-text-color);
 }
 
+textarea.form-control {
+  resize: none
+}
+
+.modal-body {
+  padding-bottom: 0;
+}
+
+/* style for portfolio */
+
 .portfolio {
   margin-top: 104px;
+}
+
+.portfolio__image {
+  width: 245px;
+  height: 245px;
+  background: #324B53;
 }
 
 .portfolio__text {
@@ -135,17 +171,48 @@ body {
   margin: 15px 0 28px 0;
 }
 
+/* style for footer */
+
 .footer {
   height:161px;
   background: #19849b;
+  margin-top: 100px;
+}
+
+.footer__title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  padding: 0;
+}
+
+.footer__content {
+  padding: 0;
+}
+
+.footer__content_info {
+  padding: 0;
 }
 
 .footer__avatar {
   width: 94px;
   height: 94px;
+  padding: 0;
 }
 
 .footer__copyright {
   height: 44px;
   background: #16758A;
+}
+
+.footer__tel {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.footer__address {
+  color: var(--main-text-color);
+  padding: 0;
 }
