@@ -158,12 +158,6 @@ textarea.form-control {
   margin-top: 104px;
 }
 
-.portfolio__image {
-  width: 245px;
-  height: 245px;
-  background: #324B53;
-}
-
 .portfolio__text {
   font-size: 16px;
   line-height: 18px;
@@ -171,7 +165,48 @@ textarea.form-control {
   margin: 15px 0 28px 0;
 }
 
-/* style for footer */
+.portfolio__items {
+  position: relative;
+}
+
+.portfolio__image {
+  width: 245px;
+  height: 245px;
+  background: #324B53;
+  opacity: 1;
+  transition: .3s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.portfolio__items:hover .portfolio__image {
+	opacity: .3;
+}
+
+.zoom-in{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-zoom {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(./images/zoom-in.svg);
+  background-size: cover;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+}
+
+.portfolio__items:hover .zoom-in{
+  opacity: 1;
+}
+
+/*footer */
 
 .footer {
   height:161px;
