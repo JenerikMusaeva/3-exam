@@ -227,6 +227,10 @@ textarea.form-control {
   justify-content:center;
 }
 
+.footer__content_info {
+  margin-left: 38px;
+}
+
 .footer__title {
   font-weight: bold;
   font-size: 22px;
@@ -234,6 +238,15 @@ textarea.form-control {
   text-transform: uppercase;
   color: var(--main-text-color);
   padding: 0;
+  text-decoration: none;
+}
+
+.footer__tel:hover{
+  color: var(--main-text-color);
+}
+
+.footer__title:hover{
+  color: var(--main-text-color);
 }
 
 .footer__avatar {
