@@ -10,13 +10,13 @@ body {
 
 /* header */
 
-.header{
+.header {
   width: 100vw;
   height: 58px;
   background: #19849b;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .header__logo {
@@ -62,15 +62,16 @@ body {
 }
 
 .hero__underline::before {
- content:"";
- height: 4px;
- width: 100%;
- background: #19849B;
- display: block;
- margin: 14px 0 12px 0;
+  content: '';
+  height: 4px;
+  width: 100%;
+  background: #19849b;
+  display: block;
+  margin: 14px 0 12px 0;
 }
 
-.hero__description, .portfolio__title {
+.hero__description,
+.portfolio__title {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
@@ -84,7 +85,8 @@ body {
   margin-top: 30px;
 }
 
-.hero__btn, .modal__btn {
+.hero__btn,
+.modal__btn {
   width: 293px;
   height: 50px;
   border: 2px solid #fff;
@@ -103,16 +105,16 @@ body {
 
 .hero__btn:hover {
   color: var(--main-text-color);
-  background-color: #19849B;
-  border: 2px solid #19849B;
+  background-color: #19849b;
+  border: 2px solid #19849b;
 }
 
 /* modal window contact me */
 
 .modal__btn:hover {
   color: var(--main-text-color);
-  background-color: #19849B;
-  border: 2px solid #19849B;
+  background-color: #19849b;
+  border: 2px solid #19849b;
 }
 
 #contactModal .modal-content {
@@ -123,7 +125,7 @@ body {
 }
 
 #contactModal .modal-header {
-  border-bottom: none
+  border-bottom: none;
 }
 
 .modal-form {
@@ -133,17 +135,17 @@ body {
 .form-control {
   border-radius: 0;
   padding: 16px;
-  background-color: #324B53;
+  background-color: #324b53;
   border: none;
   margin-bottom: 20px;
 }
 
-.modal-input-text::placeholder{
+.modal-input-text::placeholder {
   color: var(--main-text-color);
 }
 
 textarea.form-control {
-  resize: none
+  resize: none;
 }
 
 .modal-body {
@@ -168,7 +170,7 @@ textarea.form-control {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 18px
+  gap: 18px;
 }
 
 .portfolio__item {
@@ -178,18 +180,18 @@ textarea.form-control {
 .portfolio__image {
   width: 245px;
   height: 245px;
-  background: #324B53;
+  background: #324b53;
   opacity: 1;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   backface-visibility: hidden;
 }
 
 .portfolio__item:hover .portfolio__image {
-	opacity: .3;
+  opacity: 0.3;
 }
 
-.zoom-in{
-  transition: .5s ease;
+.zoom-in {
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -208,7 +210,7 @@ textarea.form-control {
   left: 50%;
 }
 
-.portfolio__item:hover .zoom-in{
+.portfolio__item:hover .zoom-in {
   opacity: 1;
 }
 
@@ -221,10 +223,10 @@ textarea.form-control {
 }
 
 .footer__content {
-  height:161px;
+  height: 161px;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .footer__content_info {
@@ -241,11 +243,11 @@ textarea.form-control {
   text-decoration: none;
 }
 
-.footer__tel:hover{
+.footer__tel:hover {
   color: var(--main-text-color);
 }
 
-.footer__title:hover{
+.footer__title:hover {
   color: var(--main-text-color);
 }
 
@@ -257,10 +259,10 @@ textarea.form-control {
 
 .footer__copyright {
   height: 44px;
-  background: #16758A;
+  background: #16758a;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .footer__copyright_text {
@@ -291,17 +293,17 @@ textarea.form-control {
   width: 100%;
   height: 100vh;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-window {
-	display: inline-flex;
+  display: inline-flex;
   flex-direction: column;
-	justify-content: center;
-	align-items: flex-end;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .modal-content {
@@ -321,11 +323,11 @@ textarea.form-control {
 .close-modal-img {
   display: block;
   /* width: 100px; */
-	border: 2px solid #fff;
-	padding: 10px 24px;
+  border: 2px solid #fff;
+  padding: 10px 24px;
   color: #fff;
   font-size: 24px;
-	transition: 0.3s;
+  transition: 0.3s;
   text-align: center;
   margin-bottom: 20px;
   font-size: 16px;
