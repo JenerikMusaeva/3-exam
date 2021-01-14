@@ -14,14 +14,16 @@ function loadedHandler(event) {
 
 window.onload = function () {
   const modal = document.querySelector('.modal-img')
-  const img = document.querySelectorAll('.portfolio__image')
-  img.forEach(image => {
+  const portfolioItem = document.querySelectorAll('.portfolio__item')
+
+  portfolioItem.forEach(image => {
     image.addEventListener('click', (event) => {
-      console.log()
       modal.style.display = 'inline-flex';
       const modalImg = modal.querySelector('.modal-window')
+      // const portfolioImage = document.querySelectorAll('.portfolio__image')
       if (modalImg.children[1]) modalImg.children[1].remove()
       modalImg.append(image.cloneNode())
+      console.log(image.cloneNode())
     })
   })
   const span = document.getElementsByClassName('close-modal-img')[0]
