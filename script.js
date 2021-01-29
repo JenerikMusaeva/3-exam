@@ -15,7 +15,7 @@
 
 window.onload = function () {
   const modal = document.querySelector('.modal-img')
-  const portfolioItem = document.querySelectorAll('.portfolio__image')
+  const portfolioItem = document.querySelectorAll('.portfolio__item')
   const span = document.getElementsByClassName('close-modal-img')[0]
 
   portfolioItem.forEach(image => {
@@ -23,7 +23,8 @@ window.onload = function () {
       modal.style.display = 'inline-flex'
       const modalImg = modal.querySelector('.modal-window')
       if (modalImg.children[1]) modalImg.children[1].remove();
-      modalImg.append(image.cloneNode())
+      imageNode = image.querySelector('.portfolio__image');
+      modalImg.append(imageNode.cloneNode())
     })
   })
 
